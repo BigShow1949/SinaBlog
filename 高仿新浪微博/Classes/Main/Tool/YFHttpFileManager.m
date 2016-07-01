@@ -1,0 +1,41 @@
+//
+//  YFHttpFileManager.m
+//  高仿新浪微博
+//
+//  Created by 杨帆 on 15-7-2.
+//  Copyright (c) 2015年 杨帆_company. All rights reserved.
+//
+
+#import "YFHttpFileManager.h"
+#import "YFHttpFile.h"
+
+@interface YFHttpFileManager ()
+{
+    NSMutableArray *_files;
+}
+
+@end
+
+@implementation YFHttpFileManager
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _files = [NSMutableArray array];
+    }
+    return self;
+}
+
+- (void)appendFileData:(NSData *)data name:(NSString *)name filename:(NSString *)filename mimeType:(NSString *)mimeType
+{
+    YFHttpFile *file = [YFHttpFile fileWithName:name data:data mimeType:mimeType filename:filename];
+    [_files addObject:file];
+}
+
+- (NSArray *)files
+{
+    return _files;
+}
+
+
+@end

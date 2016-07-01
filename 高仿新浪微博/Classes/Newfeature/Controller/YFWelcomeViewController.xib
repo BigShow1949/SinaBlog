@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YFWelcomeViewController">
+            <connections>
+                <outlet property="iconImageView" destination="iHl-eF-fEU" id="7UV-hz-xkT"/>
+                <outlet property="iconYConstraints" destination="hGm-gb-RYR" id="5zg-Oq-vcq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeLabel" destination="uFy-x5-gxf" id="RH4-Is-4vw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-aD-yk2">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="iHl-eF-fEU">
+                    <rect key="frame" x="258" y="258" width="85" height="85"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFy-x5-gxf">
+                    <rect key="frame" x="250" y="185" width="100" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="uFy-x5-gxf" secondAttribute="centerX" id="Afh-GX-Voz"/>
+                <constraint firstAttribute="bottom" secondItem="Kvd-aD-yk2" secondAttribute="bottom" id="HbW-ty-OMx"/>
+                <constraint firstItem="Kvd-aD-yk2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q1B-SX-xmq"/>
+                <constraint firstItem="Kvd-aD-yk2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WOG-mR-Glo"/>
+                <constraint firstAttribute="centerX" secondItem="iHl-eF-fEU" secondAttribute="centerX" id="cvn-9q-IzT"/>
+                <constraint firstAttribute="centerY" secondItem="iHl-eF-fEU" secondAttribute="centerY" id="hGm-gb-RYR"/>
+                <constraint firstAttribute="trailing" secondItem="Kvd-aD-yk2" secondAttribute="trailing" id="tbV-FR-w3j"/>
+                <constraint firstAttribute="centerY" secondItem="uFy-x5-gxf" secondAttribute="centerY" constant="100" id="yvI-u5-1vq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ad_background" width="320" height="568"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>
